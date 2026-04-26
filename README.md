@@ -242,12 +242,6 @@ Run `!ports` to see available ports and select manually when prompted.
 
 ---
 
-## 📄 License
-
-Released under the [CC0 1.0 Universal](LICENSE) license — public domain, no restrictions.
-
----
-
 ## 🤝 Contributing
 
 Pull requests are welcome! If you find a bug or have a feature idea, open an issue.
