@@ -194,20 +194,6 @@ uname                      # OS and platform info
 clear                      # Clear screen and show logo
 ```
 
-### Supported Pin Names
-
-| Format | Example | Description |
-|---|---|---|
-| `D2`–`D13` | `D13` | Digital pins |
-| `2`–`13` | `13` | Bare number |
-| `A0`–`A5` | `A2` | Analog pins |
-| `LED` | `LED` | Built-in LED (pin 13) |
-| `TX` / `RX` | `TX` | Serial pins |
-
-PWM-capable pins: `3`, `5`, `6`, `9`, `10`, `11`
-
----
-
 ## 🔧 Macros
 
 Macros let you save and replay sequences of commands from the Python terminal.
