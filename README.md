@@ -1,5 +1,5 @@
 # ArduinOS
-![ArduinOS Banner](https://img.shields.io/badge/ArduinOS-v3.2-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+![ArduinOS Banner](https://img.shields.io/badge/ArduinOS-v1.0-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.7+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-UNO_R3-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Windows_|_macOS_|_Linux-808080?style=for-the-badge)
