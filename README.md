@@ -34,7 +34,7 @@ cd arduinOS
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install pyserial
+pip install pyserial readline
 ```
 
 **Windows:**
