@@ -1,5 +1,5 @@
 /*
- * ArduinOS v3.0 - Advanced Kernel
+ * ArduinOS v1.0 - Advanced Kernel
  * Full GPIO, Analog, PWM control
  * Dynamic filesystem with command-line coding
  * Optimized for Arduino UNO (ATmega328P)
@@ -228,38 +228,25 @@ int8_t resolvePin(const char* name) {
   return -1;
 }
 
-// === ASCII Art Generator ===
-//void showLogo() {
-//  Serial.println(F("\n\
-//  \x1B[36m   ╔══════════════════════════════╗\x1B[0m\n\
-//  \x1B[36m   ║   \x1B[32mArduinOS v3.0\x1B[36m               ║\x1B[0m\n\
-//  \x1B[36m   ║   \x1B[33mKernelUNO Production\x1B[36m        ║\x1B[0m\n\
-//  \x1B[36m   ╚══════════════════════════════╝\x1B[0m\n\
-//  \x1B[90m   ┌────────────────────────────┐\x1B[0m\n\
-//  \x1B[90m   │\x1B[0m  \x1B[37mCPU:\x1B[0m ATmega328P @ 16MHz  \x1B[90m│\x1B[0m\n\
-//  \x1B[90m   │\x1B[0m  \x1B[37mRAM:\x1B[0m %4d bytes free     \x1B[90m│\x1B[0m\n\
-//  \x1B[90m   │\x1B[0m  \x1B[37mPins:\x1B[0m 14 Digital, 6 ADC \x1B[90m│\x1B[0m\n\
-//  \x1B[90m   └────────────────────────────┘\x1B[0m\n", freeRAM());
-//  Serial.println(F("  Type \x1B[33m'help'\x1B[0m for commands\n"));
-//}
-
+// === ASCII Art Generator ==
 void showLogo() {
-  Serial.println(F("\n\
-  \x1B[36m   ╔══════════════════════════════╗\x1B[0m\n\
-  \x1B[36m   ║ \x1B[32mArduinOS v3.0\x1B[36m║\x1B[0m\n\
-  \x1B[36m   ║\x1B[33mKernelUNO Production\x1B[36m║\x1B[0m\n\
-  \x1B[36m   ╚══════════════════════════════╝\x1B[0m\n\
-  \x1B[90m   ┌────────────────────────────┐\x1B[0m"));
-
-  Serial.println(F("  \x1B[90m   │\x1B[0m  \x1B[37mCPU:\x1B[0m ATmega328P @ 16MHz  \x1B[90m│\x1B[0m"));
-
-  Serial.print(F("  \x1B[90m   │\x1B[0m  \x1B[37mRAM:\x1B[0m "));
+  delay(10);
+  Serial.print(F(""));
+  Serial.print(F("\n"));
+  Serial.print(F("\033[36m"));    // Cyan color
+  Serial.println(F("   ╔══════════════════════════════╗"));
+  Serial.println(F("                ║   \033[32mArduinOS v1.0\033[36m               ║"));
+  Serial.println(F("                ║   \033[33mKernel\033[36m                      ║"));
+  Serial.println(F("                ╚══════════════════════════════╝"));
+  Serial.print(F("\033[90m"));    // Dark gray
+  Serial.println(F("   ┌────────────────────────────┐"));
+  Serial.print(F("   │  \033[37mCPU:\033[0m ATmega328P @ 16MHz  \033[90m│\033[0m\n"));
+  Serial.print(F("   │  \033[37mRAM:\033[0m "));
   Serial.print(freeRAM());
-  Serial.println(F(" bytes free     \x1B[90m│\x1B[0m"));
-
-  Serial.println(F("  \x1B[90m   │\x1B[0m  \x1B[37mPins:\x1B[0m 14 Digital, 6 ADC \x1B[90m│\x1B[0m"));
-  Serial.println(F("  \x1B[90m   └────────────────────────────┘\x1B[0m"));
-  Serial.println(F("  Type \x1B[33m'help'\x1B[0m for commands\n"));
+  Serial.println(F(" bytes free     \033[90m│\033[0m"));
+  Serial.println(F("   │  \033[37mPins:\033[0m 14 Digital, 6 ADC \033[90m│\033[0m"));
+  Serial.println(F("   └────────────────────────────┘\033[0m"));
+  Serial.println(F("  Type \033[33m'help'\033[0m for commands\n"));
 }
 
 void drawWave() {
@@ -1090,7 +1077,7 @@ void cmdMONITOR(char** argv, uint8_t argc) {
 // === System Commands ===
 void cmdHELP(char** argv, uint8_t argc) {
   Serial.println(F("\n  \x1B[36m╔══════════════════════════════════════╗\x1B[0m"));
-  Serial.println(F("  \x1B[36m║\x1B[0m     \x1B[33mArduinOS v3.0 Commands\x1B[0m        \x1B[36m║\x1B[0m"));
+  Serial.println(F("  \x1B[36m║\x1B[0m     \x1B[33mArduinOS v1.0 Commands\x1B[0m        \x1B[36m║\x1B[0m"));
   Serial.println(F("  \x1B[36m╚══════════════════════════════════════╝\x1B[0m\n"));
   
   Serial.println(F("  \x1B[32mHardware Control:\x1B[0m"));
@@ -1144,7 +1131,7 @@ void cmdSYSINFO(char** argv, uint8_t argc) {
   \x1B[36m     \\ \\_\\ \\_\\   \\ \\____/\\ \\____/\\ \\____\x1B[0m\n\
   \x1B[36m      \\/_/\\/_/    \\/___/  \\/___/  \\/____/\x1B[0m\n"));
   
-  Serial.print(F("  \x1B[33mOS:\x1B[0m ArduinOS v3.0 KernelUNO\n"));
+  Serial.print(F("  \x1B[33mOS:\x1B[0m ArduinOS v1.0 KernelUNO\n"));
   Serial.print(F("  \x1B[33mHost:\x1B[0m Arduino UNO R3\n"));
   Serial.print(F("  \x1B[33mCPU:\x1B[0m ATmega328P @ 16MHz\n"));
   Serial.print(F("  \x1B[33mRAM:\x1B[0m ")); Serial.print(freeRAM()); Serial.println(F("/2048 bytes"));
@@ -1255,7 +1242,7 @@ void executeCommand(char* line) {
     Serial.print('/'); Serial.println(MAX_FILES);
   }
   else if (strcmp(argv[0], "whoami") == 0) Serial.println(F("root"));
-  else if (strcmp(argv[0], "uname") == 0) Serial.println(F("ArduinOS v3.0 KernelUNO avr"));
+  else if (strcmp(argv[0], "uname") == 0) Serial.println(F("ArduinOS v1.0 KernelUNO avr"));
   else if (strcmp(argv[0], "clear") == 0 || strcmp(argv[0], "cls") == 0) {
     for (uint8_t i = 0; i < 30; i++) Serial.println();
     showLogo();
@@ -1295,7 +1282,7 @@ void setup() {
   showLogo();
   
   initFileSystem();
-  klog("Kernel v3.0 booted");
+  klog("Kernel v1.0 booted");
   klog("Hardware initialized");
   
   printPrompt();
