@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-ArduinOS Advanced Terminal v3.0
-Production-grade terminal with code editing, file sync, and visual effects
+ArduinOS Terminal v1.0
+Elegant terminal with code editing, file sync, and visual effects
 """
 
 import serial
