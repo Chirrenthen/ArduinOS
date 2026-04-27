@@ -10,6 +10,9 @@
 
 ArduinOS is a Linux-like operating environment for the Arduino UNO. A Python-powered terminal on your PC communicates with the Arduino over Serial, giving you a live shell to control GPIO, read sensors, manage a virtual filesystem, and even execute multi-command scripts — all without touching the Arduino ID
 
+**Demo**
+![Image](ttps://github.com/Chirrenthen/ArduinOS/blob/main/ArduinOS.png)
+
 ## 📦 Installation
 
 ### Requirements
