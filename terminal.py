@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ArduinOS Terminal v1.0
+ArduinOS Terminal v1.0.2
 Elegant terminal with code editing, file sync, and visual effects
 """
 
@@ -316,18 +316,15 @@ class ArduinOSTerminal:
             print(f"{Colors.RED}Not connected{Colors.RESET}")
             return False
         
-        # Escape content
-        content_escaped = content.replace('"', '\\"').replace('\n', '\\n')
-        
+        # Escape only double quotes, keep other characters (including newlines) literal
+        content_escaped = content.replace('"', '\\"')
         commands = [
             f'touch {filename}',
             f'writefile {filename} "{content_escaped}"'
         ]
-        
         for cmd in commands:
             self.ser.write(f"{cmd}\r\n".encode())
             time.sleep(0.3)
-        
         return True
     
     def download_file(self, filename):
