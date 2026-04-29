@@ -251,4 +251,7 @@ Pull requests are welcome! If you find a bug or have a feature idea, open an iss
 
 ---
 
+## Acknowledgements
+I sincerely thank @PPPDUD and @Arc1011 — the tone and notone command implementations in this project are based on their work in KernelUNO.
+
 <p align="center">Built with ❤️ for the Arduino community</p>
