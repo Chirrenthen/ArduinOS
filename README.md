@@ -4,7 +4,7 @@
 ![Python](https://img.shields.io/badge/Python-3.7+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-UNO_R3-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Windows_|_macOS_|_Linux-808080?style=for-the-badge)
-![License](https://img.shields.io/badge/License-CC0_1.0-lightgrey?style=for-the-badge)
+![License](https://img.shields.io/badge/License-BSD-3lightgrey?style=for-the-badge)
 
 > **Turn your Arduino UNO into an interactive shell — no recompiling needed.**
 
