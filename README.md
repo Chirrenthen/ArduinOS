@@ -4,7 +4,7 @@
 ![Python](https://img.shields.io/badge/Python-3.7+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-UNO_R3-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Windows_|_macOS_|_Linux-808080?style=for-the-badge)
-![License](https://img.shields.io/badge/License-CC0_1.0-lightgrey?style=for-the-badge)
+![License](https://img.shields.io/badge/License-BSD-3lightgrey?style=for-the-badge)
 
 > **Turn your Arduino UNO into an interactive shell — no recompiling needed.**
 
@@ -250,5 +250,8 @@ Run `!ports` to see available ports and select manually when prompted.
 Pull requests are welcome! If you find a bug or have a feature idea, open an issue.
 
 ---
+
+## Attribute
+I sincerely thank @PPPDUD and @Arc1011 — some of the command implementations in this project are based on their work in KernelUNO.
 
 <p align="center">Built with ❤️ for the Arduino community</p>
