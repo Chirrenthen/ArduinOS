@@ -1,10 +1,10 @@
 # ArduinOS
 
-![ArduinOS](https://img.shields.io/badge/ArduinOS-v1.0-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+![ArduinOS](https://img.shields.io/badge/ArduinOS-v1.0.3-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.7+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-UNO_R3-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Windows_|_macOS_|_Linux-808080?style=for-the-badge)
-![License](https://img.shields.io/badge/License-BSD-3lightgrey?style=for-the-badge)
+![License](https://img.shields.io/badge/License-CC0_1.0-lightgrey?style=for-the-badge)
 
 > **Turn your Arduino UNO into an interactive shell — no recompiling needed.**
 
@@ -56,13 +56,13 @@ pip install pyserial pyreadline3
 ```bash
 cd ArduinOS
 source .venv/bin/activate
-python terminal.py
+python main.py
 ```
 **Windows**
 ```bash
 cd ArduinOS
 .venv\Scripts\activate.bat
-python terminal.py
+python main.py
 ```
 
 ArduinOS will automatically detect your Arduino's serial port and connect. If multiple ports are found, you'll be prompted to choose one.
@@ -250,8 +250,5 @@ Run `!ports` to see available ports and select manually when prompted.
 Pull requests are welcome! If you find a bug or have a feature idea, open an issue.
 
 ---
-
-## Acknowledgements
-I sincerely thank @PPPDUD and @Arc1011 — the tone and notone command implementations in this project are based on their work in KernelUNO.
 
 <p align="center">Built with ❤️ for the Arduino community</p>
